@@ -7,8 +7,7 @@ function App() {
         Hello world!
       </h1>
       <Outlet></Outlet>
-      <button className="btn btn-secondary">Secondary</button>
-      
+      {/* <Outlet></Outlet> */}
     </>
   )
 }
