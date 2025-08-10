@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router'
 import './App.css'
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
         Hello world!
       </h1>
       <button className="btn btn-secondary">Secondary</button>
+      <Outlet></Outlet>
     </>
   )
 }
