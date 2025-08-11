@@ -1,11 +1,10 @@
 import React from 'react';
-
+import bannerImage from '../assets/banner.png';
 const Hero = () => {
     return (
         <div>
-            <h1>Hero</h1>
+            <img src={bannerImage} alt="Banner Image" />
         </div>
     );
 };
-
 export default Hero;

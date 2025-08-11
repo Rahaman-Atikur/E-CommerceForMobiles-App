@@ -1,9 +1,11 @@
 import React from 'react';
+import Navbar from '../Component/Navbar';
 
 const ErrorPages = () => {
     return (
         <div>
-            <h4>Error Pages</h4>
+            <Navbar></Navbar>
+            <h4>Error</h4>
         </div>
     );
 };
