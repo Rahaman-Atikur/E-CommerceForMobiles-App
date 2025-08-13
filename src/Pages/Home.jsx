@@ -3,12 +3,12 @@ import Hero from '../Component/Hero';
 import PhonesContainer from '../Component/PhonesContainer';
 import { useLoaderData } from 'react-router';
 const Home = () => {
-    const data = useLoaderData();
-    console.log(data);
+    const Phones = useLoaderData();
+    console.log(Phones);
     return (
         <div>
             <Hero></Hero>
-            <PhonesContainer Phones={data}></PhonesContainer>
+            <PhonesContainer Phones={Phones}></PhonesContainer>
         </div>
     );
 };
