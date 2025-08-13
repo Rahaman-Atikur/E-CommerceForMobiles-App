@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
 const PhoneCard = ({ phone }) => {
-    console.log(phone);
     const { name, description, image } = phone || {};
     return (
         <div className="card bg-base-100  shadow-sm">

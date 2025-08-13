@@ -3,7 +3,6 @@ import PhoneCard from "./PhoneCard";
 const PhonesContainer = ({ Phones }) => {
   const [displayPhones, setDisplayPhones] = useState([]);
   const [showAll, setShowAll] = useState(false);
-
   useEffect(() => {
     if (showAll) {
       setDisplayPhones(Phones);
@@ -18,8 +17,16 @@ const PhonesContainer = ({ Phones }) => {
           <PhoneCard key={phone.id} phone={phone}></PhoneCard>
         ))}
       </div>
-      <button onClick={() => setShowAll(!showAll)} className="btn btn-primary">
-       { showAll?"Show Less":"Show ALL"}
+      <button
+        onClick={() => {
+          setShowAll(!showAll);
+          if (showAll) {
+            window.scrollTo(0, 0);
+          }
+        }}
+        className="btn btn-primary"
+      >
+        {showAll ? "Show Less" : "Show All"}
       </button>
     </div>
   );
