@@ -1,6 +1,7 @@
 import React from 'react';
 
-const PhoneCard = () => {
+const PhoneCard = ({Phone}) => {
+    console.log(Phone);
     return (
         <div className="card bg-base-100 w-96 shadow-sm">
             <figure>
@@ -18,5 +19,4 @@ const PhoneCard = () => {
         </div>
     );
 };
-
 export default PhoneCard;
