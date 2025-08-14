@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Hero from '../Component/Hero';
 import PhonesContainer from '../Component/PhonesContainer';
-import { useLoaderData } from 'react-router';
+import { Outlet, useLoaderData } from 'react-router';
 const Home = () => {
     const data = useLoaderData();
     const [Phones,setPhones] = useState(data);
