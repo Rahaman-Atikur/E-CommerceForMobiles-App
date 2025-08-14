@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 const PhoneCard = ({ phone }) => {
-    const { name, description, image } = phone || {};
+    const { name, description, image,id } = phone || {};
     return (
         <div className="card bg-base-100  shadow-sm">
             <figure>
@@ -16,7 +16,7 @@ const PhoneCard = ({ phone }) => {
                     {description}
                 </p>
                 <div className="card-actions justify-end">
-                    <Link >
+                    <Link to={`/phone-details/${id}`}>
                         <button className="btn btn-primary">View More</button>
                     </Link>
                 </div>
